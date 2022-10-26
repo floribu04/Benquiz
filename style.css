@@ -17,3 +17,18 @@ img{
     border-color: white;
     margin: 50px;
 }
+.button {
+  display: inline-block;
+  border: 1px solid silver;
+  border-radius: 5px;
+  background-color: white;
+  color: #444;
+  text-decoration: none;
+  padding: 6px 10px 4px 10px;
+  margin: 5px 10px;
+}
+
+.button:hover {
+  background-color: silver;
+  color: #000;
+}
