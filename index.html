@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>System Warning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <input type="text" name="Nachname" id="Nachname" value=""/> <br>
-    
-    <button onclick="return speichern();">Speichern</button>
-    <button onclick="return ausgeben();">Ausgeben</button> 
-    
-    <p id="satz">hallo</p>
-    <p>hallo<p>
+    <h1>Achtung!</h1>
+    <h2>Ihr Betriebssystem wurde aus Sicherheitsgründen gesperrt!</h2>
+    <div id="text">
+        <img src="Background.png" alt="Warning">
+        <p>Durch das Besuchen von Seiten mit infizierten und pornografischen Inhalten ist das
+        Computersystem an eine kritische Grenze angekommen, nach der das System
+        zusammenbrechen und die ganzen Dateien verloren gehen können. Um das System
+        wiederherstellen zu können, müssen Sie ein zusätzliches Sicherheitsupdate herunterladen.
+        
+        Dieses Systemupdate ist kostenlos und wurde speziell für infizierte Computer entwickelt.
+        Es beschützt das System vollständig von Virus und Schadprogrammen, stabilisiert Ihr
+        Computersystem und verhindert den Datenverlust.</p>
+    </div>
+    <p></p>
+    <button>Herunterladen</button>  
+    <script>
+        function enterFullscreen(element) {
+            if(element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if(element.msRequestFullscreen) {      // for IE11 (remove June 15, 2022)
+                element.msRequestFullscreen();
+            } else if(element.webkitRequestFullscreen) {  // iOS Safari
+                element.webkitRequestFullscreen();
+            }
+            }
+
+        enterFullscreen(document.documentElement);
+    </script>  
 </body>
 </html>

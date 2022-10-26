@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(255, 0, 0, 0.838);
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+}
+img{
+    height: 10%;
+    width: 10%;
+}
+#text{
+    display: -webkit-flex;
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    margin: 50px;
+}
